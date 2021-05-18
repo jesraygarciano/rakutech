@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAKUTECH</title>
 
-    <script src="js/header.js" async></script>
     <link rel="stylesheet" href="css/preset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/middle.css">
@@ -49,29 +48,83 @@
                 <span>USD&nbsp; <i class="fas fa-caret-down"></i> </span>
                 <div class="header__top--user-profile"><i class="far fa-user"></i> My Profile</div>
                 <div class="header__top--cart">
-                    <a href="cart.html" class=""><i class="fas fa-shopping-basket"></i> 0 Items <span>$0.00</span></a>
+                    <a href="cart.html" class=""><i class="fas fa-shopping-basket"></i> <span class="header__top--cart-items">0 Items</span><span class="header__top--cart-price">$0.00</span></a>
                 </div>
                 <div class="header__top--search-icon"><i class="fas fa-search"></i></div>
             </div>
             <div class="header--brand">
-                    <h1>RAKU<span>TECH</span></h1>
+                <h1><a href="index.html">RAKU<span>TECH</span></a></h1>
             </div>
-            <nav class="header__main-nav">
-                <ul>
-                    <li>
-                        <div class="header__main-nav__arrow-guide">
-                            <i id="main-nav-arrow" class="header__main-nav__arrow-guide--arrow-up"></i>
-                        </div>
-                        <a href="index.html" class="header__main-nav--home active" onmouseover="moveArrow('14px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">
-                            HOME
-                        </a>
-                    </li>
-                    <li><a href="" class="header__main-nav--store" onmouseover="moveArrow('115px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">STORE</a></li>
-                    <li><a href="" class="header__main-nav--iphone" onmouseover="moveArrow('220px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">IPHONE</a></li>
-                    <li><a href="" class="header__main-nav--ipad" onmouseover="moveArrow('321px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">IPAD</a></li>
-                    <li><a href="" class="header__main-nav--macbook" onmouseover="moveArrow('432px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">MACBOOK</a></li>
-                    <li><a href="product.html" class="header__main-nav--accessories" onmouseover="moveArrow('570px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">ACCESSORIES</a></li>
-                </ul>
+            <nav class="header__main-nav header__mobile">
+                <section class="header__nav">
+                    <button type="button" class="header__main-nav--toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+    
+                    <div class="header--brand header__mobile--logo">
+                        <h1><a href="index.html">RAKU<span>TECH</span></a></h1>
+                    </div>
+    
+                    <div class="header__top--cart header__mobile--cart">
+                        <a href="cart.html" class=""><i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                </section>
+
+                <secition class="header__nav-bar">
+                    <ul>
+                        <li>
+                            <div class="header__main-nav__arrow-guide">
+                                <i id="main-nav-arrow" class="header__main-nav__arrow-guide--arrow-up"></i>
+                            </div>
+                            <a href="index.html" class="header__main-nav--home active" onmouseover="moveArrow('14px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">
+                                HOME
+                            </a>
+                            <span class="header__main-nav--carret"><i class="fas fa-caret-down"></i></span>
+                            
+    
+                            <nav class="header__mega-menu">
+                                <div class="header__mega-menu__products">
+                                    <h5>Category</h5>
+                                    <ul>
+                                        <li>Airport & Wireless</li>
+                                        <li>AppleCare</li>
+                                        <li>Bags, Shells & Sleeves</li>
+                                        <li>Business & Security</li>
+                                        <li>Cable & Docs</li>
+                                        <li>Cameras & Video</li>
+                                        <li>Car & Travel</li>
+                                        <li>Cases & Films</li>
+                                    </ul>
+                                </div>
+                                <div class="header__mega-menu__accessories-1">
+                                    <h5>Category</h5>
+                                    <ul>
+                                        <li>Charging Devices</li>
+                                        <li>Connected Home</li>
+                                        <li>Device Care</li>
+                                        <li>Display & Graphic</li>
+                                        <li>Fitness & Sport</li>
+                                        <li>Headphones</li>
+                                        <li>HealthKit</li>
+                                    </ul>
+                                </div>
+                                <div class="header__mega-menu__accessories-2">
+                                    <h5>Category</h5>
+                                    <ul>
+                                        <li>Mice & Keyboards</li>
+                                        <li>Music Creation</li>
+                                        <li>Networking & Server</li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li><a href="product-list.html" class="header__main-nav--store" onmouseover="moveArrow('115px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">STORE</a></li>
+                        <li><a href="product-list.html" class="header__main-nav--iphone" onmouseover="moveArrow('220px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">IPHONE</a></li>
+                        <li><a href="product-list.html" class="header__main-nav--ipad" onmouseover="moveArrow('321px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">IPAD</a></li>
+                        <li><a href="product-list.html" class="header__main-nav--macbook" onmouseover="moveArrow('432px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">MACBOOK</a></li>
+                        <li><a href="product.html" class="header__main-nav--accessories" onmouseover="moveArrow('570px')" onmouseout="slowlyHideHeaderDropDownMenuNow()">ACCESSORIES</a></li>
+                    </ul>
+                </secition>
             </nav>
             <nav class="header__drop-down-nav" onmouseover="displayHeaderDropDownMenu()" onmouseout="slowlyHideHeaderDropDownMenuNow()">
                 <div class="header__drop-down-nav__products">
@@ -110,10 +163,6 @@
             </nav>
         </header>
     </div>
-<!-- Hide Bread Crumbs
-    <nav class="header__bread-crumbs"> <a href="index.html" class="active">Home</a> <span> / </span> <a href="#" class="">My shopping cart</a> </nav>
--->
-    <div class="header__bottom-space"></div>
     
     <!-- Banner Area -->
     <section id="banner" class="banner">
@@ -121,7 +170,7 @@
             <section class="banner__content">
                 <h2 class="banner__product">iPhone X</h1>
                 <p class="banner__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                <a href="#" class="banner__button">More</a>
+                <a href="product-list.html" class="banner__button">More</a>
             </section>
 
             <img class="banner__image" src="images/iphone-banner.png" alt="iphone">
@@ -186,8 +235,108 @@
                             </div>
                             <div class="bottom1__card__back">
                                 <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="bottom1__card__title">Apple Macbook Pro</h3>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <footer class="bottom1__card__footer">
+                        <span class="bottom1__card__price">$499</span>
+                        <span class="bottom1__card__price bottom1__card__price--before">$599</span>
+                    </footer>
+                </div>
+                <div class="bottom1__card">
+                    <div class="bottom1__card__flip">
+                        <div class="bottom1__card__inner">
+                            <div class="bottom1__card__front">
+                                <img src="images/c04297141.png" alt="Philips Hue 7W BR30 Connected Downlight Lamp" class="bottom1__card__image">
+                            </div>
+                            <div class="bottom1__card__back">
+                                <section class="bottom1__card__favCart">
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="bottom1__card__title">Philips Hue 7W BR30 Connected Downlight Lamp</h3>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <footer class="bottom1__card__footer">
+                        <span class="bottom1__card__price">$4999</span>
+                        <span class="bottom1__card__price bottom1__card__price--before">$3999</span>
+                    </footer>
+                </div>
+                <div class="bottom1__card">
+                    <div class="bottom1__card__flip">
+                        <div class="bottom1__card__inner">
+                            <div class="bottom1__card__front">
+                                <img src="images/H_tvTry.png" alt="H-Squared tvTry" class="bottom1__card__image">
+                            </div>
+                            <div class="bottom1__card__back">
+                                <section class="bottom1__card__favCart">
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="bottom1__card__title">H-Squared tvTry</h3>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <footer class="bottom1__card__footer">
+                        <span class="bottom1__card__price">$199</span>
+                        <span class="bottom1__card__price bottom1__card__price--before">$299</span>
+                    </footer>
+                </div>
+                <div class="bottom1__card">
+                    <div class="bottom1__card__flip">
+                        <div class="bottom1__card__inner">
+                            <div class="bottom1__card__front">
+                                <img src="images/Netatmo_Rain_Gauge.png" alt="Netatmo Rain Gauge" class="bottom1__card__image">
+                            </div>
+                            <div class="bottom1__card__back">
+                                <section class="bottom1__card__favCart">
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="bottom1__card__title">Netatmo Rain Gauge</h3>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <i class="fas fa-star bottom1__card__star"></i>
+                    <footer class="bottom1__card__footer">
+                        <span class="bottom1__card__price">$259</span>
+                        <span class="bottom1__card__price bottom1__card__price--before">$309</span>
+                    </footer>
+                </div>
+                <div class="bottom1__card">
+                    <div class="bottom1__card__flip">
+                        <div class="bottom1__card__inner">
+                            <div class="bottom1__card__front">
+                                <img src="images/macbook-pro.png" alt="Macbook Pro" class="bottom1__card__image">
+                            </div>
+                            <div class="bottom1__card__back">
+                                <section class="bottom1__card__favCart">
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="cart.html"></a>
                                 </section>
                             </div>
                         </div>
@@ -211,8 +360,8 @@
                             </div>
                             <div class="bottom1__card__back">
                                 <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
+                                     <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="cart.html"></a>
                                 </section>
                             </div>
                         </div>
@@ -236,8 +385,8 @@
                             </div>
                             <div class="bottom1__card__back">
                                 <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="cart.html"></a>
                                 </section>
                             </div>
                         </div>
@@ -261,108 +410,8 @@
                             </div>
                             <div class="bottom1__card__back">
                                 <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="bottom1__card__title">Apple Macbook Pro</h3>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <footer class="bottom1__card__footer">
-                        <span class="bottom1__card__price">$499</span>
-                        <span class="bottom1__card__price bottom1__card__price--before">$599</span>
-                    </footer>
-                </div>
-                <div class="bottom1__card">
-                    <div class="bottom1__card__flip">
-                        <div class="bottom1__card__inner">
-                            <div class="bottom1__card__front">
-                                <img src="images/macbook-pro.png" alt="Macbook Pro" class="bottom1__card__image">
-                            </div>
-                            <div class="bottom1__card__back">
-                                <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="bottom1__card__title">Apple Macbook Pro</h3>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <footer class="bottom1__card__footer">
-                        <span class="bottom1__card__price">$499</span>
-                        <span class="bottom1__card__price bottom1__card__price--before">$599</span>
-                    </footer>
-                </div>
-                <div class="bottom1__card">
-                    <div class="bottom1__card__flip">
-                        <div class="bottom1__card__inner">
-                            <div class="bottom1__card__front">
-                                <img src="images/macbook-pro.png" alt="Macbook Pro" class="bottom1__card__image">
-                            </div>
-                            <div class="bottom1__card__back">
-                                <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="bottom1__card__title">Apple Macbook Pro</h3>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <footer class="bottom1__card__footer">
-                        <span class="bottom1__card__price">$499</span>
-                        <span class="bottom1__card__price bottom1__card__price--before">$599</span>
-                    </footer>
-                </div>
-                <div class="bottom1__card">
-                    <div class="bottom1__card__flip">
-                        <div class="bottom1__card__inner">
-                            <div class="bottom1__card__front">
-                                <img src="images/macbook-pro.png" alt="Macbook Pro" class="bottom1__card__image">
-                            </div>
-                            <div class="bottom1__card__back">
-                                <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="bottom1__card__title">Apple Macbook Pro</h3>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <i class="fas fa-star bottom1__card__star"></i>
-                    <footer class="bottom1__card__footer">
-                        <span class="bottom1__card__price">$499</span>
-                        <span class="bottom1__card__price bottom1__card__price--before">$599</span>
-                    </footer>
-                </div>
-                <div class="bottom1__card">
-                    <div class="bottom1__card__flip">
-                        <div class="bottom1__card__inner">
-                            <div class="bottom1__card__front">
-                                <img src="images/macbook-pro.png" alt="Macbook Pro" class="bottom1__card__image">
-                            </div>
-                            <div class="bottom1__card__back">
-                                <section class="bottom1__card__favCart">
-                                    <i class="bottom1__card__icon far fa-heart"></i>
-                                    <i class="bottom1__card__icon fas fa-shopping-cart"></i>
+                                    <a class="bottom1__card__add-to-cart" href="javascript:;"></a>
+                                    <a class="bottom1__card__add-to-cart" href="cart.html"></a>
                                 </section>
                             </div>
                         </div>
@@ -480,7 +529,7 @@
                 <article class="bottom4__news__box">
                     <img src="images/Netatmo_Rain_Gauge.png" alt="Netatmo Rain Gauge" class="">
                     <div class="bottom4__news__holder">
-                        <h4 class="bottom4__news__title bottom4__news__title--font">H-Squared tvTray</h4>
+                        <h4 class="bottom4__news__title bottom4__news__title--font">Netatmo Rain Gauge</h4>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -504,10 +553,11 @@
     <!-- Footer Area -->
     <footer class="footer">
         <div class="footer__top-outer-container">
+ 
             <div class="footer__top wrapper">
                 <div class="footer__top--brand-description">
-                    <h3>RAKUTECH</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cum hic eligendi a obcaecati voluptatum at maxime, dicta eaque.</span>
+                    <h3 class="footer__top--title">RAKUTECH</h3>
+                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</span>
                 </div>
                 <div class="footer__top--social-media">
                     <h5 class="footer--heading">Follow Us</h5>
@@ -527,7 +577,7 @@
         </div>
         <div class="footer__middle wrapper">
             <div class="footer__middle--site-map">
-                <h5 class="footer--heading">Information</h5>
+                <h5 class="footer--heading">Information <i class="fas fa-arrow-up"></i></h5>
                 <ul>
                     <li>About Us</li>
                     <li>Information</li>
@@ -536,7 +586,7 @@
                 </ul>
             </div>
             <div class="footer__middle--site-map">
-                <h5 class="footer--heading">Service</h5>
+                <h5 class="footer--heading">Service <i class="fas fa-arrow-up"></i></h5>
                 <ul>
                     <li>About Us</li>
                     <li>Information</li>
@@ -545,7 +595,7 @@
                 </ul>
             </div>
             <div class="footer__middle--site-map">
-                <h5 class="footer--heading">Extras</h5>
+                <h5 class="footer--heading">Extras <i class="fas fa-arrow-up"></i></h5>
                 <ul>
                     <li>About Us</li>
                     <li>Information</li>
@@ -554,7 +604,7 @@
                 </ul>
             </div>
             <div class="footer__middle--site-map">
-                <h5 class="footer--heading">My Account</h5>
+                <h5 class="footer--heading">My Account <i class="fas fa-arrow-up"></i></h5>
                 <ul>
                     <li>About Us</li>
                     <li>Information</li>
@@ -563,7 +613,7 @@
                 </ul>
             </div>
             <div class="footer__middle--site-map">
-                <h5 class="footer--heading">Useful Links</h5>
+                <h5 class="footer--heading">Useful Links <i class="fas fa-arrow-up"></i></h5>
                 <ul>
                     <li>About Us</li>
                     <li>Information</li>
@@ -572,7 +622,7 @@
                 </ul>
             </div>
             <div class="footer__middle--site-map">
-                <h5 class="footer--heading">Our Offers</h5>
+                <h5 class="footer--heading">Our Offers <i class="fas fa-arrow-up"></i></h5>
                 <ul>
                     <li>About Us</li>
                     <li>Information</li>
@@ -594,5 +644,8 @@
             
         </div>
     </footer>
+    
+    <script src="js/header.js" async></script>
+    <script src="js/plugin.js"></script>
 </body>
 </html>

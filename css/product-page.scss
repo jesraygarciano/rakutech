@@ -23,6 +23,10 @@ hr{
             }
         }
 
+        &--header{
+            display: flex;
+        }
+
         &--info{
             display: flex;
             flex-direction: column;
@@ -134,8 +138,23 @@ hr{
                 }
             }
         }
+        &--c69692{
+            background: #c69692;
+            border: 2px solid #c69692;
+            &::after{
+                background: #c69692;
+            }
+        }
 
-        &--blue{
+        &--d73181{
+            background: #D73181;
+            border: 2px solid #D73181;
+            &::after{
+                background: #D73181;
+            }
+        }
+
+        &--006CFF{
             background: #006CFF;
             border: 2px solid #006CFF;
 
@@ -143,7 +162,7 @@ hr{
                 background: #006CFF;
             }
         }
-        &--red{
+        &--fc3E39{
             background: #FC3E39;
             border: 2px solid #FC3E39;
 
@@ -151,20 +170,29 @@ hr{
                 background: #FC3E39;
             }
         }
-        &--black{
+        &--171717{
             background: #171717;
             border: 2px solid #171717;
             &::after{
                 background: #171717;
             }
         }
-        &--yellow{
+        &--FFF600{
             background: #FFF600;
             border: 2px solid #FFF600;
             &::after{
                 background: #FFF600;
             }
         }
+
+        &--dbdbdb{
+            background: #dbdbdb;
+            border: 2px solid #dbdbdb;
+            &::after{
+                background: #dbdbdb;
+            }
+        }
+
         &--sizes{
             width: 116px !important;
             height: 38px;
@@ -232,6 +260,7 @@ hr{
                 display: flex;
                 justify-content: space-evenly;
                 font-weight: 600;
+                align-items: center;
 
                 &:first-child{
                     background: #385C8E;
@@ -289,7 +318,7 @@ hr{
                 display: none;
                 position: absolute;
                 content: '';
-                bottom: -42px;
+                bottom: -37px;
                 left: 0;
                 width: 100%;
                 height: 4px;
