@@ -236,8 +236,7 @@ function cartTotalPrice(){
         })
     cart_total_price.textContent = `$ ${(total + 20).toFixed(2)}`;
 
-    }   
-    
+    }
 }
 //#endregion
 
@@ -272,8 +271,6 @@ if(signUpForm){
             divBackDrop = document.querySelector('.successful-registered__backdrop'),
             checkExist;
 
-
-
         if(personSignedUp){
             checkExist = personSignedUp.find(function(personData, index){
                 if(personData.email === data.email)
@@ -292,6 +289,7 @@ if(signUpForm){
         }
 
         localStorage.setItem('personSignedUp', JSON.stringify(personSignedUp));
+
     });
 }
 
@@ -300,7 +298,6 @@ if(loginForm){
         e.preventDefault();
         let data = Object.fromEntries(new FormData(e.target).entries()),
             emailInvalid = document.querySelector('.sign-up__invalid-feedback');
-
 
         if(personSignedUp){
             checkExist = personSignedUp.find(function(personData, index){

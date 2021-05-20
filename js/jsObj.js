@@ -97,13 +97,55 @@ var library = [
     }
 ];
 
-function loadDoc() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       document.getElementById("demo").innerHTML = this.responseText;
-      }
+function toJSONString( form ) {
+    let obj = {};
+    let elements = form.querySelectorAll( "input, select, textarea" );
+    for( let i = 0; i < elements.length; ++i ) {
+        let element = elements[i];
+        let name = element.name;
+        let value = element.value;
+
+        if( name ) {
+            obj[ name ] = value;
+        }
+    }
+
+    return JSON.stringify( obj );
+}
+
+document.addEventListener( "DOMContentLoaded", function() {
+    var form = document.getElementById( "signup-submit" );
+    var output = document.getElementById( "output" );
+    form.addEventListener( "submit", function( e ) {
+        e.preventDefault();
+        var json = toJSONString( this );
+    console.log(json);
+        output.innerHTML = json;
+
+    }, false);
+
+});
+
+
+// AJAX
+function displayFullName() {
+    // Creating the XMLHttpRequest object
+    var request = new XMLHttpRequest();
+
+    // Instantiating the request object
+    request.open("GET", "https://www.reddit.com/r/aww.json");
+
+    // Defining event listener for readystatechange event
+    request.onreadystatechange = function() {
+        // Check if the request is compete and was successful
+        if(this.readyState === 4 && this.status === 200) {
+            // Inserting the response from server into an HTML element
+            document.getElementById("result").innerHTML = this.responseText;
+        }
     };
-    xhttp.open("GET", "nba.json", true);
-    xhttp.send();
-  }
+
+    console.log(request.responseText);
+
+    // Sending the request to the server
+    request.send();
+}
