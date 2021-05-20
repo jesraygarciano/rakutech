@@ -36,7 +36,6 @@ function displayHeaderDropDownMenu(){
     if(delayInProgress=true){
         clearTimeout(delayTimeOut);
     }
-
     arrowElement.style.display = "block";
     headerDropDownMenu[0].style.display = "Flex";
 
